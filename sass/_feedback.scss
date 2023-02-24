@@ -1,0 +1,131 @@
+.feedback {
+  padding-top: 100px;
+  padding-bottom: 245px;
+  background-color: #e5e5e5;
+  color: #3c3b3b;
+  position: relative;
+  .half {
+    position: absolute;
+    top: 291px;
+  }
+  .wheel {
+    position: absolute;
+    top: 435px;
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__header {
+    font-size: 24px;
+  }
+  &__description {
+    margin-top: 30px;
+    width: 480px;
+    font-size: 20px;
+    line-height: 150%;
+  }
+  &__comment {
+    width: 560px;
+    height: 204px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(46, 46, 46, 0.27);
+    border-radius: 10px;
+    padding-top: 50px;
+    position: relative;
+    &-photo {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &-quotes {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &-text {
+      padding: 0 45px;
+      font-size: 20px;
+      line-height: 150%;
+      text-align: center;
+    }
+    &-name {
+      padding-right: 17px;
+      margin-top: 26px;
+      font-size: 16px;
+      color: #858585;
+      text-align: right;
+    }
+  }
+  &__slider {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    position: absolute;
+    top: calc(100% + 72px);
+    left: 50%;
+    transform: translateX(-50%);
+    &-item {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #67a8d2;
+      opacity: 0.3;
+      &_active {
+        opacity: 1;
+      }
+    }
+  }
+  &__title {
+    margin-top: 60px;
+    width: 740px;
+    font-size: 20px;
+    line-height: 150%;
+  }
+  &__questions {
+    margin-top: 47px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &-minus {
+      width: 31px;
+      height: 3px;
+      background-color: #fa6232;
+    }
+    &-answer {
+      padding: 0 25px 25px 80px;
+      font-size: 16px;
+      line-height: 150%;
+      color: #3c3b3b;
+      background-color: #fff;
+    }
+    &-question {
+      min-height: 80px;
+      background-color: #fff;
+      &-container {
+        height: 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 25px 25px 24px 25px;
+        box-shadow: 0px 4px 4px rgba(46, 46, 46, 0.27);
+      }
+    }
+    &-questionText {
+      font-weight: 600;
+      font-size: 20px;
+      color: #1b567c;
+      margin-left: 24px;
+    }
+  }
+}
+.hidden {
+  display: none;
+}

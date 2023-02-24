@@ -1,0 +1,80 @@
+@import "variables";
+@import "button";
+@import "listItem";
+@import "header";
+@import "promo";
+@import "rate";
+@import "cms";
+@import "ssl";
+@import "domens";
+@import "profit";
+@import "feedback";
+@import "payment";
+@import "footer";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "SF Pro Display";
+  font-weight: 400;
+}
+ul {
+  list-style-type: none;
+  margin-block: 0;
+}
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 130px;
+  margin: 0 auto;
+}
+.relative {
+  position: relative;
+}
+.flex-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h2 {
+  font-size: 48px;
+  text-align: center;
+  color: #3c3b3b;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    padding: 0 90px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    padding: 0 60px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 0 10px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+}

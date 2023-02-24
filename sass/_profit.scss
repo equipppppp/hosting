@@ -1,0 +1,50 @@
+.profit {
+  padding-top: 70px;
+  height: 494px;
+  background-color: rgba(103, 168, 210, 0.2);
+  &__flex {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &-item {
+      text-align: center;
+    }
+    &-header {
+      font-weight: 600;
+      font-size: 20px;
+      color: #3c3b3b;
+      margin-top: 20px;
+    }
+    &-description {
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 150%;
+      color: #858585;
+    }
+  }
+  &__line {
+    position: absolute;
+    width: 345px;
+    height: 1px;
+    background-color: #67a8d2;
+    opacity: 0.3;
+    top: 32px;
+    &_left {
+      left: 200px;
+    }
+    &_right {
+      right: 165px;
+      width: 337px;
+    }
+  }
+}
+#first {
+  width: 275px;
+}
+#second {
+  width: 283px;
+}
+#third {
+  width: 225px;
+}

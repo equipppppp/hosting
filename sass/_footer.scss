@@ -1,0 +1,105 @@
+.footer {
+  height: 827px;
+  background: #262626;
+  padding-top: 90px;
+  &__devider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(133, 133, 133, 0.2);
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    &-description {
+      margin-top: 15px;
+      font-size: 16px;
+      line-height: 150%;
+      color: #858585;
+    }
+    &-lists {
+      display: flex;
+      justify-content: space-between;
+      ul {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 16px;
+        color: #ffffff;
+        :first-child {
+          font-size: 20px;
+          color: #858585;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    &-contact {
+      padding-top: 5px;
+      padding-left: 40px;
+      margin-bottom: 25px;
+      font-size: 16px;
+      color: #ffffff;
+      position: relative;
+      &-title {
+        color: #858585;
+      }
+      &-link {
+        margin-top: 5px;
+        font-weight: 600;
+      }
+      &-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &-support {
+        color: #fff;
+        text-align: right;
+      }
+    }
+    &-socials {
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      &-img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(
+          90deg,
+          #7cb4d8 0%,
+          rgba(191, 230, 255, 0) 100%
+        );
+      }
+    }
+    &-button {
+      width: 88px;
+      height: 31px;
+      background-color: #67a8d2;
+      border-radius: 5px;
+      font-size: 14px;
+      color: #fff;
+      border: none;
+      margin-top: 50px;
+    }
+    &-start {
+      max-width: 490px;
+    }
+    &-end {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+  &__rights {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #858585;
+    opacity: 0.5;
+  }
+}
